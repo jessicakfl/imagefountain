@@ -14,6 +14,7 @@
 		787D80422676C18500C1BDA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787D80402676C18500C1BDA9 /* LaunchScreen.storyboard */; };
 		787D804D2676C18500C1BDA9 /* fountationiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D804C2676C18500C1BDA9 /* fountationiosTests.swift */; };
 		787D80582676C18500C1BDA9 /* fountationiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D80572676C18500C1BDA9 /* fountationiosUITests.swift */; };
+		787D806C2676CB9F00C1BDA9 /* ImagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D806B2676CB9E00C1BDA9 /* ImagesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		787D80532676C18500C1BDA9 /* fountationiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fountationiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		787D80572676C18500C1BDA9 /* fountationiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fountationiosUITests.swift; sourceTree = "<group>"; };
 		787D80592676C18500C1BDA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787D806B2676CB9E00C1BDA9 /* ImagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				787D803E2676C18500C1BDA9 /* Assets.xcassets */,
 				787D80402676C18500C1BDA9 /* LaunchScreen.storyboard */,
 				787D80432676C18500C1BDA9 /* Info.plist */,
+				787D806B2676CB9E00C1BDA9 /* ImagesTableViewController.swift */,
 			);
 			path = fountationios;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				787D806C2676CB9F00C1BDA9 /* ImagesTableViewController.swift in Sources */,
 				787D80362676C17F00C1BDA9 /* AppDelegate.swift in Sources */,
 				787D80382676C17F00C1BDA9 /* SceneDelegate.swift in Sources */,
 			);
