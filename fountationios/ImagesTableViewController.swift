@@ -6,9 +6,18 @@
 //
 
 import UIKit
-
+struct Country {
+    var isoCode: String
+    var name: String
+}
 class ImagesTableViewController: UITableViewController {
-
+    let countries = [
+      Country(isoCode: "at", name: "Austria"),
+      Country(isoCode: "be", name: "Belgium"),
+      Country(isoCode: "de", name: "Germany"),
+      Country(isoCode: "el", name: "Greece"),
+      Country(isoCode: "fr", name: "France"),
+  ]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,21 +30,24 @@ class ImagesTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 3
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 1
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return countries.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ImageCell", for: indexPath)
-
-        cell.textLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
+        let image = countries[indexPath.row]
+        cell.textLabel?.text = image.name
+        cell.detailTextLabel?.text = image.isoCode
+        cell.imageView?.image = UIImage(named: image.isoCode)
+        
 //         Configure the cell...
 
         return cell
